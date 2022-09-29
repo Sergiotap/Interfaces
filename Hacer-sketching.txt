@@ -1,0 +1,4 @@
+Pensar en una empresa y hacer un diseño de sketching en un papel y pasarlo después a Wireframming con draw.io
+Nombre y apellidos
+Tipo de empresa
+Sketching
