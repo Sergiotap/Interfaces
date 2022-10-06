@@ -21,8 +21,8 @@ P.D. Elementos interactivos (botones, checkbox, menús)
 P.D. Presentación de datos
     Tablas bien estructuradas
         Etiquetas claras en filas/columnas
-        Título no muyy largo
-        Encabezadis para resumir
+        Título no muy largo
+        Encabezados para resumir
     Gráficos de tamaño aecuado
         Paleta de color
         Leyenda
