@@ -14,3 +14,15 @@ P.D. Aspecto
     Color, fuente, distribución
     Iconos: objeto<--->acción
     Colores: armonía, identiad de marca
+P.D. Elementos interactivos (botones, checkbox, menús)
+    Títulos intuitivos
+    Acciones fácilmente comprensibles
+    Opciones rápidas de escoger
+P.D. Presentación de datos
+    Tablas bien estructuradas
+        Etiquetas claras en filas/columnas
+        Título no muyy largo
+        Encabezadis para resumir
+    Gráficos de tamaño aecuado
+        Paleta de color
+        Leyenda
