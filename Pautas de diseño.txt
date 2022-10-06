@@ -1,0 +1,16 @@
+Pautas de diseño
+P.D. Menús
+    Título del menú
+    Siempre en la misma posición(zona superior)
+    Menús en cascada
+    Menús emergeentes o contextuales
+P.D. Ventanas
+    Poder: abrir, cerrar, modificar tamaño
+    Nº adecuado
+P.D. Cuadros de Diálogo
+    Caja de texto emergente
+    Mensajes activos y positivos
+P.D. Aspecto
+    Color, fuente, distribución
+    Iconos: objeto<--->acción
+    Colores: armonía, identiad de marca
