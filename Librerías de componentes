@@ -1,0 +1,12 @@
+Librerías de componentes
+Conjunto de clases con sus atributos y métodos
+Java
+    AWT (Abstract Window Toolkit)
+        import java.awt.*;//Esto no es muy preciso
+        Clase Component
+        Clase Container
+    SWING(evolución de AWT)
+        import javax.swing.*;//Esto no es muy preciso
+        Arrastra componentes desde la paleta de diseño
+Reutilizar código
+
