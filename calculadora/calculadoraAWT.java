@@ -1,13 +1,13 @@
 import java.awt.*;
 import java.awt.event.*;
-public class Calculadora extends Frame implements ActionListener {
+public class calculadoraAWT extends Frame implements ActionListener {
 	public String botones[] = {"1","2","3","+","4","5","6","-","7","8","9","*","0","/","=","AC"};
 	public Integer resultado = 0;
 	public TextField calculo;
 	public int cifras[] = new int[20];
 	public int operaciones[] = new int[20];
 	public int c; //Contador
-	public Calculadora (String title, Integer width, Integer height) {
+	public calculadoraAWT (String title, Integer width, Integer height) {
 		setTitle(title);
 		setSize(width,height);
 		setLayout(new GridLayout(2,1));
@@ -87,6 +87,6 @@ public class Calculadora extends Frame implements ActionListener {
 		return resultado;
 	}
 	public static void main (String args[]) {
-		Calculadora c = new Calculadora("Calculadora",300,400);
+		calculadoraAWT c = new calculadoraAWT("Calculadora",300,400);
 	}
 }

@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.math.BigDecimal;
-public class GUICalculator {
+public class calculadoraSwing {
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
