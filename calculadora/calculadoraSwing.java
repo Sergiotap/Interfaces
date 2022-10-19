@@ -16,7 +16,7 @@ public class calculadoraSwing {
 }
 class CalculatorFrame extends JFrame {
     public CalculatorFrame() {
-        setTitle("Calculadora javadesdecero.es");
+        setTitle("Calculadora");
         CalculatorPanel panel = new CalculatorPanel();
         add(panel);
         pack();
