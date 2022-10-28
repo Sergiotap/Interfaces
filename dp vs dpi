@@ -1,3 +1,8 @@
 dp=deip=density-independant pixel
 dpi=dot per inche
 1dp=160dpi
+sp=pixel independiente de la escala
+    scale-indepent pixel
+    sólo para texto
+    48dp es similar a 9 mm
+    9mm es el tamaño físico
