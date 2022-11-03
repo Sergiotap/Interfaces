@@ -11,8 +11,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     TextView Numero;
     Button n1, n2, n3, n4, n5, n6, n7, n8, n9, n0, nPunto, oMulti, oSuma, oResta, oDivi, oIgual, oCE;
-    String n="";
-    double numero1=0, numero2=0;
+    String n="", operacion="";
+    double resultado=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,64 +57,111 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.n0:
-                n+=0;
+                n += 0;
                 Numero.setText(n);
                 break;
             case R.id.n1:
-                n+=1;
+                n += 1;
                 Numero.setText(n);
                 break;
             case R.id.n2:
-                n+=2;
+                n += 2;
                 Numero.setText(n);
                 break;
             case R.id.n3:
-                n+=3;
+                n += 3;
                 Numero.setText(n);
                 break;
             case R.id.n4:
-                n+=4;
+                n += 4;
                 Numero.setText(n);
                 break;
             case R.id.n5:
-                n+=5;
+                n += 5;
                 Numero.setText(n);
                 break;
             case R.id.n6:
-                n+=6;
+                n += 6;
                 Numero.setText(n);
                 break;
             case R.id.n7:
-                n+=7;
+                n += 7;
                 Numero.setText(n);
                 break;
             case R.id.n8:
-                n+=8;
+                n += 8;
                 Numero.setText(n);
                 break;
             case R.id.n9:
-                n+=9;
+                n += 9;
                 Numero.setText(n);
                 break;
             case R.id.npunto:
-                break;
-            case R.id.oDivide:
-                break;
-            case R.id.oMulti:
-                break;
-            case R.id.oResta:
-                break;
-            case R.id.oSuma:
-                int resultado = Integer.parseInt(n)+Integer.parseInt(n);
-                n = String.valueOf(resultado);
-                n="";
+                n +=".";
                 Numero.setText(n);
                 break;
+            case R.id.oDivide:
+                operacionBoton();
+                operacion="división";
+                break;
+            case R.id.oMulti:
+                operacionBoton();
+                operacion="producto";
+                break;
+            case R.id.oResta:
+                operacionBoton();
+                operacion="resta";
+                break;
+            case R.id.oSuma:
+                operacionBoton();
+                operacion="suma";
+                break;
             case R.id.oCE:
+                resultado=0;
+                n="0";
+                Numero.setText(n);
                 break;
             case R.id.oIgual:
+                if (operacion.equalsIgnoreCase("suma")) {
+                    resultado=resultado+Double.parseDouble(n);
+                    n = String.valueOf(resultado);
+                    Numero.setText(n);
+                }
+                else if (operacion.equalsIgnoreCase("resta")) {
+                    resultado = resultado - Double.parseDouble(n);
+                    n = String.valueOf(resultado);
+                    Numero.setText(n);
+                }
+                else if (operacion.equalsIgnoreCase("producto")) {
+                    resultado = resultado * Double.parseDouble(n);
+                    n = String.valueOf(resultado);
+                    Numero.setText(n);
+                }
+                else if (operacion.equalsIgnoreCase("división")) {
+                    if(n.contains("0")&&(!((n.contains("1"))||(n.contains("2"))||(n.contains("3"))||(n.contains("4"))||(n.contains("5"))||(n.contains("6"))||(n.contains("7"))||(n.contains("8"))||(n.contains("9"))))){
+                        n="No se puede dividir por 0, vuelve a empezar el cálculo desde el principio";
+                        resultado=0;
+                        Numero.setText(n);
+                    }
+                    else {
+                        resultado = resultado / Double.parseDouble(n);
+                        n = String.valueOf(resultado);
+                        Numero.setText(n);
+                    }
+                }
+                else{
+                    Numero.setText(n);
+                }
+                break;
 
+        }
+    }
+    public void operacionBoton(){
+        resultado = resultado + Double.parseDouble(n);
+        n = String.valueOf(resultado);
+        n = "";
+        Numero.setText(n);
     }
 }
