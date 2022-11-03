@@ -128,16 +128,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     resultado=resultado+Double.parseDouble(n);
                     n = String.valueOf(resultado);
                     Numero.setText(n);
+                    resultado=0;
                 }
                 else if (operacion.equalsIgnoreCase("resta")) {
                     resultado = resultado - Double.parseDouble(n);
                     n = String.valueOf(resultado);
                     Numero.setText(n);
+                    resultado=0;
                 }
                 else if (operacion.equalsIgnoreCase("producto")) {
                     resultado = resultado * Double.parseDouble(n);
                     n = String.valueOf(resultado);
                     Numero.setText(n);
+                    resultado=0;
                 }
                 else if (operacion.equalsIgnoreCase("división")) {
                     if(n.contains("0")&&(!((n.contains("1"))||(n.contains("2"))||(n.contains("3"))||(n.contains("4"))||(n.contains("5"))||(n.contains("6"))||(n.contains("7"))||(n.contains("8"))||(n.contains("9"))))){
@@ -149,6 +152,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         resultado = resultado / Double.parseDouble(n);
                         n = String.valueOf(resultado);
                         Numero.setText(n);
+                        resultado=0;
                     }
                 }
                 else{
@@ -160,7 +164,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     public void operacionBoton(){
         resultado = resultado + Double.parseDouble(n);
-        n = String.valueOf(resultado);
         n = "";
         Numero.setText(n);
     }
