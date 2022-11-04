@@ -126,21 +126,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.oIgual:
                 if (operacion.equalsIgnoreCase("suma")) {
                     resultado=resultado+Double.parseDouble(n);
-                    n = String.valueOf(resultado);
-                    Numero.setText(n);
-                    resultado=0;
+                    mostrar();
                 }
                 else if (operacion.equalsIgnoreCase("resta")) {
                     resultado = resultado - Double.parseDouble(n);
-                    n = String.valueOf(resultado);
-                    Numero.setText(n);
-                    resultado=0;
+                    mostrar();
                 }
                 else if (operacion.equalsIgnoreCase("producto")) {
                     resultado = resultado * Double.parseDouble(n);
-                    n = String.valueOf(resultado);
-                    Numero.setText(n);
-                    resultado=0;
+                    mostrar();
                 }
                 else if (operacion.equalsIgnoreCase("división")) {
                     if(n.contains("0")&&(!((n.contains("1"))||(n.contains("2"))||(n.contains("3"))||(n.contains("4"))||(n.contains("5"))||(n.contains("6"))||(n.contains("7"))||(n.contains("8"))||(n.contains("9"))))){
@@ -150,9 +144,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                     else {
                         resultado = resultado / Double.parseDouble(n);
-                        n = String.valueOf(resultado);
-                        Numero.setText(n);
-                        resultado=0;
+                        mostrar();
                     }
                 }
                 else{
@@ -166,5 +158,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         resultado = resultado + Double.parseDouble(n);
         n = "";
         Numero.setText(n);
+    }
+    public void mostrar(){
+        n = String.valueOf(resultado);
+        Numero.setText(n);
+        resultado=0;
     }
 }
