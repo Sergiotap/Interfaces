@@ -1,0 +1,31 @@
+GENERACIÓN DE INTERFACES A PARTIR DE DOCUMENTOS XML
+    -Fácil de aprender
+    -Buena compatibilidad entre sistemas
+    -Intercambio de información entre aplicaciones sencillo, sin Software addicional
+    -Interfaz separada de a lógica
+    XML=eXtensible Markup Language
+    Documentos:
+        -Parte logica
+            -Elementos
+            -Atributos
+            -Valores
+        -Parte física
+    Parser=Procesador de XML
+        Analiza que el doc es válido
+        Transforma el código XML en código legible
+        Verifica la sintexis
+        Tipos
+            -Parser DOM-estructura
+            -Parser SAX-eventos
+        Xercos-Parser de código libre
+    Etiquetas
+        -apertura< ... >
+        -cierre</ ... >
+        -vacía< />
+    Elementos
+        -Etiqueta(apertura y cierre)
+            -Atributo < ... nombre="valor">
+        -Contenido
+        "<apellido>García</apellido>"
+        Events: interacción ususario-aplicación (teclado, ratón)
+            -Mouser Move(mover ratón), Mouse Down(pulsar botón del mouse), Change(Al cambiar el contenido del control), Clic(aAl hacer clic sobre el contenido), GetFocus(Recibe el foco), LostFocus(Pierde el foco), Mouse Entered(el ratón entra en el área del texto), Mouse exited(el ratón sale del área del texto)
