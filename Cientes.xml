@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Clientes>
+    <Cliente1 nombre="" apellido="" telefono="">
+    </Cliente1>
+    <Cliente2 nombre="" apellido="" telefono="">
+    </Cliente2>
+    <Cliente3 nombre="" apellido="" telefono="">
+    </Cliente3>
+</Clientes>
