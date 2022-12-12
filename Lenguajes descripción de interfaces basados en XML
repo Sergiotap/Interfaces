@@ -1,0 +1,50 @@
+Lenguajes descripciń de interfaces basados en XML
+-XAML: eXtensible Application MarKup Language
+    Separa capas:
+        -de presentación
+        -lógica
+    D.I. escritorio y web
+    Visual Studio: ayuda con la sintaxis
+    Sensible a mayúsculas(HTML no lo es)
+-XUL: eXtensible User Interface Language
+    gecko. Desarrollado por Mozilla
+-XHTML: eXtensible Hypertext MarKup Language
+    Extension de HTML. Más robusto.
+    Edición de páginas web
+    Compatible con
+        -vídeos
+        -imágenes
+        -lenguajes scripting
+    Marca contenido (texto, imágenes, enlaces) como hipervínculo-
+        ->navegador la muestra
+    Documentos: 
+        -estructurado xHTML
+        -legible por analizador->Interpreta signos de marcado
+                               ->Reproduce contenido
+    Crear Documento:
+        -Tipo(transicional, estricto, Frameset)
+        -Versión XHTML (1.0, 2.0)
+    Reglas estrictas:
+        -etiquetas, atributos: minusculas
+        -elementos correctamente anidados y cerrados
+    Doc válido leído
+        -navegador web
+        -dispositivo móvil
+    Recomendado por W3C
+-GML: Geograghy MarKup Language
+    Macas precedidas de ':'
+-MathML: Mathematical MarKup Language
+    Intercambio información programas tipo matemático: MathML+XHTML
+-RSS: Really Simple Sindication
+    Difundir información->usuarios suscritos (novedades sitio web)
+-XSLT: eXtensible Styleshhet Language for Transformations
+    Hoja de estilos recomendado por XML
+    Más sofisticado que CSS
+-SVG: Scalable Vector Graphics
+    Representar: 
+        -Elementos geométricos vectoriales 2D
+        -Imágenes de mapa de bits
+        -Texto
+-UIML: User Interface MarKup Language
+    Creado por Harmonia
+    Código abierto
