@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Clientes>
-    <Cliente1 nombre="" apellido="" telefono="">
+    <Cliente1 nombre="Pepe" apellido="Botella" telefono="123456789">
     </Cliente1>
-    <Cliente2 nombre="" apellido="" telefono="">
+    <Cliente2 nombre="Juan" apellido="Pérez" telefono="012345678">
     </Cliente2>
-    <Cliente3 nombre="" apellido="" telefono="">
+    <Cliente3 nombre="Alberto" apellido="Inventado" telefono="135792468">
     </Cliente3>
 </Clientes>
