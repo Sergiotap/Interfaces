@@ -1,0 +1,46 @@
+Documentación de aplicaciones
+    Documentos de pruebas
+        -De entrada: escenarios,procedimientos
+        -De salida: informes de resultados
+    Documentos técnicos
+        -Interna: comentarios en el código
+        -Externa: manual técnico (tareas de mantenimiento), manual de usuario (guía para facilitar el uso)
+    Manual de usuario (diseño atractivo, gráficos, ejemplos)
+        -Portada
+        -Título y copyright
+        -Prólogo
+        -Guía de la aplicación
+        -Sección de preguntas frecuentes
+        -Glosario de términos
+    Manual y guía de explotación (instalación, configuración, puesta en marcha)
+        -Requerimientos del sistema (procesador, memoria)
+        -Proceso de instalación
+        -Actualizaciones del sistema y copias de seguridad
+        -Glosario
+        -Índice
+    Guía rápida (concreta)
+        ->usuarios
+        ->mantenimiento
+    Guía de referencia (información técnica, usario experto)
+        ->usarios con mayor nivel de conocimientos
+    ToolTips: elementos en la interfaz cuando posiciono el ratón
+    Ficheros de ayuda
+        ->Mapa del fichero-navegación (tabla de contenido)
+        ->Vista de información-contenidos de la ayuda que se desea buscar
+    Formatos
+        ->CHM-Windows
+            A partir de HTML Help Workshop
+        ->HLP-Windows
+            Necesita compilación
+        ->HPJ-Windows
+            Se crea con Help Workshop
+        ->IPF-Web (en línea)
+            Necesita compilación
+        ->Java Help-Soporta varios
+            Se encuentra implementado en Java
+    Herramientas
+        ->Help Workshop-Windows
+        ->Help Maker-Gratuito
+        ->Java Help--Java
+        ->Shalom Help Maker-gratuito
+        ->GhostDoc-extensión de Visual Studio
