@@ -1,0 +1,41 @@
+Unidad 5. Distribución de aplicaciones (Tema 4)
+-----------------------------------------------
+1) Implementación app
+2) Distribución app
+    1) Empaquetado
+        -Librerías/ bibliotecas
+        -Ficheros ejecutables (código)
+        -Elementos multimedia
+    2) Instalacion app
+        -Instaladores
+            -MSI Studio (Windows)
+            -Windows Installer (Windows)
+            -Install Builder
+            -Wixtoolseet (Visual Studio)
+            SO
+           ----
+            Windows:
+                -EXE seleccionar características
+                -MSI instalación preconfigurada
+            Linux:
+                -DEB: se instala directamente
+---------------------------------------------
+                -RPM Redhat Package Manager |
+                -TGZ Específico UNIX        | Extraídos
+                -TAR paquetes sin comprimir |
+---------------------------------------------
+        -Paquetes autoinstalables
+            -NuGet (código abierto):
+                -Instalar
+                -Crear paquetes:
+                    -Tareas comunes
+                    -Menú archivo
+                -Editar metadatos de un paquete
+3) Firma digital: distribución de Sw
+    -clave pública
+    -clave privada (solo poseída por el firmante)
+    FNMT
+    -Herramientas:
+        -Autofirma: .pdf
+        -KSI Secure: cualquier archivo
+        -Jar: sw Java ->Jar Signer
