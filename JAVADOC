@@ -1,0 +1,21 @@
+JavaDOc: Comentarios en el código (/**...*/)
+    ->extraer los comentarios indexados formato HTML
+    3 tipos:
+        ->clase
+        ->variable
+        ->método
+    Comentarios que procesa son solamente public y protected. Los de tipo private se ignoran.
+    El comentario JavaDoc cuenta con 2 partes:
+        ->Descripción principal (/**...)
+        ->Sección de etiquetas (@...) (Son sensibles a las mayúsculas)
+    ETIQUETAS JAVADOC
+        @see: común a clases y métodos. Referencia a la documentación de otra clase o método
+        clases:
+            ->@version
+            ->@author
+            ->@since - fecha desde que existe la clase
+        Métodos:ç
+            ->@param - parámetros que recibe el método
+            ->@return - dato que devuelve el método
+            ->@throws - comentario sobre las excepciones que lanza el método
+            ->@deprecated - indica que el método es obsoleto
