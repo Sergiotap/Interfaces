@@ -1,0 +1,52 @@
+UD 7. Realización de informes (Tema 9)
+--------------------------------------
+Informe:
+    ->datos organizados
+    ->análizar los datos
+    2 tipos:
+        ->Incrustados: generan la app (IDE)
+        ->No incrustados: herramienta externa
+Herramientas gráficas:
+    ->iReport+JasperReports: Elaborar informes en entornos de desarrollo Java (Eclipse,NetBeams)
+        ->JasperReprots: encapsular informes
+        ->iReport: Interfaz gráfica
+    ->Birt: Java (Eclipse) open source
+    ->Crystal Reports: MIcrosoft Visual Studio
+Formatos salida:
+    -xls, csv, pdf, docx, ppt, odt
+Valores calculados:
+   Variables:
+        ->De usuario (defeinidas por el usuario)
+        ->Predefinidas (generadaas por herramienta)
+    PAGE_NUMBER: Nº de páginas
+    COLUMN_NUMBER: Nº de columnas
+    REPORT_COUNT: Nº de registros (consulta)
+    PAGE_COUNT: Nº de registros por página
+Operaciones más frecuentes:
+    -Numeración de línea: Nº de lineas del informe
+    -Recuentos: Valores de una o varias columnas
+    -Totales: Valores de una o varias columnas
+Filtrado de datos y realización de consultas
+--------------------------------------------
+Conexión a base de datos:
+        ------
+    ->MySql  |
+             | Ecipse, Netbeams -> Programas, Librerías
+    ->Oracle |
+        ------
+Consultas SQL:
+    SELECT * (columnas)
+    FROM (nombre tabla)
+    WHERE (condiciones de filtrado)
+Informe-->Subinformes
+ ________________________
+|    ___    ___   ___    |
+|   |   |  |   | |   |   |
+|   | 1 |  | 2 | | 3 |   |
+|   |___|  |___| |___|   |
+|________________________|
+
+Puede contener subinformes-->No puede
+Tiene encabezado y pie de página-->No tiene
+Objeto independiente-->No existe por sí solo
+
