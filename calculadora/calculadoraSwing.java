@@ -97,14 +97,32 @@ class CalculatorPanel extends JPanel {
         }
     }
     public void calculate(BigDecimal x) {
-        if (lastCommand.equals("+")) result = result.add(x);
-        else if (lastCommand.equals("-")) result = result.subtract(x);
-        else if (lastCommand.equals("*")) result = result.multiply(x);
-        else if (lastCommand.equals("/")) result = result.divide(x);
-        else if (lastCommand.equals("=")) result = x;
+        if (lastCommand.equals("+")) {
+            result = result.add(x);
+        } else if (lastCommand.equals("-")) {
+            result = result.subtract(x);
+        } else if (lastCommand.equals("*")) {
+            result = result.multiply(x);
+        } else if (lastCommand.equals("/")) {
+            try {
+                if (x.compareTo(BigDecimal.ZERO) != 0) {
+                    result = result.divide(x);
+                } else {
+                    display.setText("No se puede dividir por 0");
+                    return; // Detener la ejecución si se intenta dividir por cero
+                }
+            } catch (ArithmeticException e) {
+                display.setText("No se puede dividir por 0");
+                return; // Detener la ejecución si se intenta dividir por cero
+            }
+        } else if (lastCommand.equals("=")) {
+            result = x;
+        }
+        
         if (result.compareTo(BigDecimal.ZERO) == 0) {
             result = BigDecimal.ZERO;
         }
+        
         display.setText(result.toString());
     }
 }
